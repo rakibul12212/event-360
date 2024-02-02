@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const NavBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -9,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="h-16 bg-slate-600">
+    <header className="h-16 bg-transparent sticky-nav">
       <nav className="h-full w-full max-w-[1200px] px-4 mx-auto flex justify-between items-center">
         <div>
           <span className="font-bold text-2xl text-white">

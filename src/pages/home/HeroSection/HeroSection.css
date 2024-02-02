@@ -1,0 +1,6 @@
+.bg {
+    background: url("https://i.ibb.co/QcRPPkc/hero-BG.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -70px;
+}
