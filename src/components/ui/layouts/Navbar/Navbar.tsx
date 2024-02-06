@@ -1,16 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-const NavBar = () => {
+const NavBar = ({ scrollThreshold = 0 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > scrollThreshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrollThreshold]);
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
-    <header className="h-16 bg-transparent sticky-nav">
+    <header
+      className={`h-16 sticky-nav ${
+        isScrolled ? `bg-sky-950` : `bg-transparent`
+      }`}
+    >
       <nav className="h-full w-full max-w-[1200px] px-4 mx-auto flex justify-between items-center">
         <div>
           <span className="font-bold text-2xl text-white">
