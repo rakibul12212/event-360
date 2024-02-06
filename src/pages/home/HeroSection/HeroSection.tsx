@@ -12,7 +12,7 @@ const HeroSection = () => {
         <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#FFD600]">
           For Winter
         </p>
-        <p className="text-sm mx-auto max-w-[800px]">
+        <p className="text-md mx-auto max-w-[900px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga a vero
           obcaecati aut totam delectus reprehenderit velit, consequuntur nostrum
           aperiam quis non voluptatum voluptate nisi.
