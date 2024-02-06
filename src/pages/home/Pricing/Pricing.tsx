@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button/Button";
 import CheckMark from "@/components/ui/CheckMark/CheckMark";
 import Container from "@/components/ui/Container";
 
@@ -15,7 +16,7 @@ const Pricing = () => {
       </div>
       {/* card */}
       <div className="flex justify-center item-center gap-[32px]">
-        <div className="border rounded-md hover:bg-[#EA9B00] ">
+        <div className="border rounded-md hover:bg-[#EA9B00] shadow-xl">
           <div className="px-5 py-5">
             <h1 className="font-semibold text-lg pb-[20px]">Enterprice</h1>
             <p className="text-sm max-w-[250px] pb-[20px]">
@@ -24,9 +25,7 @@ const Pricing = () => {
             <p className="font-bold text-[48px] pb-[20px]">
               <span className="text-[40px]">$</span>15
             </p>
-            <button className="p-2 border mb-5 mx-2 px-14">
-              Get this packages
-            </button>
+            <Button className="p-2 mb-5 mx-2 px-14">Get this packages</Button>
             <ol className="font-semibold text-[12px] pb-[20px] space-y-2 ">
               <div className="flex gap-2 ">
                 <CheckMark />
@@ -59,7 +58,7 @@ const Pricing = () => {
           </button>
         </div>
         {/* card-2 */}
-        <div className="border rounded-md hover:bg-[#EA9B00] ">
+        <div className="border rounded-md hover:bg-[#EA9B00] shadow-xl">
           <div className="px-5 py-5">
             <h1 className="font-semibold text-lg pb-[20px]">Forever</h1>
             <p className="text-sm max-w-[250px] pb-[20px]">
@@ -68,9 +67,7 @@ const Pricing = () => {
             <p className="font-bold text-[48px] pb-[20px]">
               <span className="text-[40px]">$</span>25
             </p>
-            <button className="p-2 border mb-5 mx-2 px-14">
-              Get this packages
-            </button>
+            <Button className="p-2 mb-5 mx-2 px-14">Get this packages</Button>
             <ol className="font-semibold text-[12px] pb-[20px] space-y-2">
               <div className="flex gap-2 ">
                 <CheckMark />
@@ -103,7 +100,7 @@ const Pricing = () => {
           </button>
         </div>
         {/* card-3 */}
-        <div className="border rounded-md hover:bg-[#EA9B00] ">
+        <div className="border rounded-md hover:bg-[#EA9B00] shadow-xl">
           <div className="px-5 py-5">
             <h1 className="font-semibold text-lg pb-[20px]">Business Pack</h1>
             <p className="text-sm max-w-[250px] pb-[20px]">
@@ -112,9 +109,7 @@ const Pricing = () => {
             <p className="font-bold text-[48px] pb-[20px]">
               <span className="text-[40px]">$</span>9
             </p>
-            <button className="p-2 border mb-5 mx-2 px-14">
-              Get this packages
-            </button>
+            <Button className="p-2 mb-5 mx-2 px-14">Get this packages</Button>
             <ol className="font-semibold text-[12px] pb-[20px] space-y-2">
               <div className="flex gap-2 ">
                 <CheckMark />

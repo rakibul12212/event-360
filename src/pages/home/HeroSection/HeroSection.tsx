@@ -18,7 +18,7 @@ const HeroSection = () => {
           aperiam quis non voluptatum voluptate nisi.
         </p>
 
-        <Button></Button>
+        <Button>Explore</Button>
       </Container>
     </div>
   );
