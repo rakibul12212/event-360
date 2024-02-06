@@ -15,7 +15,7 @@ const Pricing = () => {
         </p>
       </div>
       {/* card */}
-      <div className="flex justify-center item-center gap-[32px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-2 gap-y-4 place-items-center justify-items-center">
         <div className="border rounded-md hover:bg-[#EA9B00] shadow-xl">
           <div className="px-5 py-5">
             <h1 className="font-semibold text-lg pb-[20px]">Enterprice</h1>
@@ -67,7 +67,9 @@ const Pricing = () => {
             <p className="font-bold text-[48px] pb-[20px]">
               <span className="text-[40px]">$</span>25
             </p>
-            <Button className="p-2 mb-5 mx-2 px-14">Get this packages</Button>
+            <Button className="p-2 mb-5 mx-2 sm:mx-0 md:mx-1 lg:mx:2 px-14">
+              Get this packages
+            </Button>
             <ol className="font-semibold text-[12px] pb-[20px] space-y-2">
               <div className="flex gap-2 ">
                 <CheckMark />
