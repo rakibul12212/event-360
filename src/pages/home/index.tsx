@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import Pricing from "./Pricing/Pricing";
 import RecentEvent from "./RecentEvent/RecentEvent";
 import Testimonial from "./Testimonial/Testimonial";
+import ValuableClient from "./ValuableClient/ValuableClient";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Pricing></Pricing>
       <RecentEvent></RecentEvent>
       <Testimonial></Testimonial>
+      <ValuableClient></ValuableClient>
       <AboutSection></AboutSection>
     </div>
   );

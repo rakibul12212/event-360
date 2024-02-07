@@ -1,35 +1,15 @@
-import React, { useRef } from "react";
-import Container from "../../../components/ui/Container";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import React from "react";
+import Container from "@/components/ui/Container";
 
 const Testimonial = () => {
-  let sliderRef = useRef(null);
-  const next = () => {
-    sliderRef.slickNext();
-  };
-  const previous = () => {
-    sliderRef.slickPrev();
-  };
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };
   return (
-    <Container className="px-28">
-      <div className="flex justify-between items-center py-[88px]">
+    <Container >
+      <div className="flex sm:flex-wrap justify-between items-center py-[88px]">
         <h1 className="font-extrabold text-[48px]">
           What Our Client Said about us
         </h1>
         <div className="flex gap-3" style={{ textAlign: "center" }}>
-          <button
-            className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer  transition-opacity duration-300 ease-in-out"
-            onClick={previous}
-          >
+          <button className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer  transition-opacity duration-300 ease-in-out">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -45,10 +25,7 @@ const Testimonial = () => {
               />
             </svg>
           </button>
-          <button
-            className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer  transition-opacity duration-300 ease-in-out"
-            onClick={next}
-          >
+          <button className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer  transition-opacity duration-300 ease-in-out">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -67,63 +44,55 @@ const Testimonial = () => {
         </div>
       </div>
 
-      {/* slider */}
-      <div className="slider-container ">
-        <Slider
-          ref={(slider) => {
-            sliderRef = slider;
-          }}
-          {...settings}
-        >
-          <div key={1}>
-            <div className="space-y-2 bg-red-200 mx-4 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
-              <div className="flex justify-start items-center gap-3">
-                <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
-                <div className="space-y-1">
-                  <h1 className="font-md text-[28px]">Amelia Joseph</h1>
-                  <p className="text-[20px]">Chief Manager</p>
-                </div>
+      <div className="grid  xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div key={1}>
+          <div className="space-y-2 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
+            <div className="flex sm:flex-wrap justify-start items-center gap-3">
+              <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
+              <div className="space-y-1">
+                <h1 className="font-md text-[28px]">Amelia Joseph</h1>
+                <p className="text-[20px]">Chief Manager</p>
               </div>
-              <p className="text-[16px]">
-                My vision came alive effortlessly. Their blend of casual and
-                professional approach made the process a breeze. Creativity
-                flowed, and the results were beyond my expectations.
-              </p>
             </div>
+            <p className="text-[16px]">
+              My vision came alive effortlessly. Their blend of casual and
+              professional approach made the process a breeze. Creativity
+              flowed, and the results were beyond my expectations.
+            </p>
           </div>
-          <div key={2}>
-            <div className="space-y-2 bg-red-200 mx-4 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
-              <div className="flex justify-start items-center gap-3">
-                <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
-                <div className="space-y-1">
-                  <h1 className="font-md text-[28px]">Amelia Joseph</h1>
-                  <p className="text-[20px]">Chief Manager</p>
-                </div>
+        </div>
+        <div key={2}>
+          <div className="space-y-2 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
+            <div className="flex justify-start items-center gap-3">
+              <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
+              <div className="space-y-1">
+                <h1 className="font-md text-[28px]">Amelia Joseph</h1>
+                <p className="text-[20px]">Chief Manager</p>
               </div>
-              <p className="text-[16px]">
-                My vision came alive effortlessly. Their blend of casual and
-                professional approach made the process a breeze. Creativity
-                flowed, and the results were beyond my expectations.
-              </p>
             </div>
+            <p className="text-[16px]">
+              My vision came alive effortlessly. Their blend of casual and
+              professional approach made the process a breeze. Creativity
+              flowed, and the results were beyond my expectations.
+            </p>
           </div>
-          <div key={3}>
-            <div className="space-y-2 bg-red-200 mx-4 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
-              <div className="flex justify-start items-center gap-3">
-                <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
-                <div className="space-y-1">
-                  <h1 className="font-md text-[28px]">Amelia Joseph</h1>
-                  <p className="text-[20px]">Chief Manager</p>
-                </div>
+        </div>
+        <div key={3}>
+          <div className="space-y-2 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
+            <div className="flex justify-start items-center gap-3">
+              <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
+              <div className="space-y-1">
+                <h1 className="font-md text-[28px]">Amelia Joseph</h1>
+                <p className="text-[20px]">Chief Manager</p>
               </div>
-              <p className="text-[16px]">
-                My vision came alive effortlessly. Their blend of casual and
-                professional approach made the process a breeze. Creativity
-                flowed, and the results were beyond my expectations.
-              </p>
             </div>
+            <p className="text-[16px]">
+              My vision came alive effortlessly. Their blend of casual and
+              professional approach made the process a breeze. Creativity
+              flowed, and the results were beyond my expectations.
+            </p>
           </div>
-        </Slider>
+        </div>
       </div>
     </Container>
   );

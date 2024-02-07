@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button/Button";
 const RecentEvent = () => {
   return (
     <Container>
-      <div className="flex justify-center items-center gap-[70px] pt-[131px]">
+      <div className="flex flex-wrap justify-center items-center gap-[70px] pt-[131px]">
         <div>
           <h1 className="font-extrabold text-[48px] pb-[24px]">Recent Event</h1>
           <p className="text-[18px] max-w-[518px] ">
