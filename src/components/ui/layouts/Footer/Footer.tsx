@@ -9,9 +9,11 @@ const Footer = () => {
       <Container className="py-[48px]">
         <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
           <div>
-            <span className="font-bold text-2xl text-white">
-              Event <span className="text-[#FFD600] font-bold">360</span>
-            </span>
+            <a href="/">
+              <span className="font-bold text-2xl text-white">
+                Event <span className="text-[#FFD600] font-bold">360</span>
+              </span>
+            </a>
           </div>
           <div>
             <ol className="space-y-2">

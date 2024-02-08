@@ -3,7 +3,7 @@ import { FacebookLogo, LinkedinLogo, TwitterLogo } from "phosphor-react";
 
 const Cards = () => {
   return (
-    <Card className="max-w-[250px] p-5 shadow-md">
+    <Card className="max-w-[250px] p-3 shadow-md">
       <Card.Container className="flex items-center justify-center">
         <Avatar
           img="https://www.sketch.ca/sketchPub/uploads/2021/01/woman-of-Igbo-sun-portrait-details.jpg"
@@ -13,7 +13,7 @@ const Cards = () => {
         />
       </Card.Container>
       <Card.Container className="text-center">
-        <Card.Title className="text-body-5 font-semibold text-metal-800 md:text-body-4">
+        <Card.Title className="font-md text-[28px] text-metal-800 ">
           Michael Wells
         </Card.Title>
         <Card.Title className="!text-body-6 font-normal text-metal-400 md:text-body-5">

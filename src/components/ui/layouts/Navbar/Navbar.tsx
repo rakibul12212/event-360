@@ -27,9 +27,11 @@ const NavBar = ({ scrollThreshold = 0 }) => {
     >
       <nav className="h-full w-full max-w-[1340px]  mx-auto flex justify-between items-center">
         <div>
-          <span className="font-bold text-2xl text-white">
-            Event <span className="text-[#FFD600] font-bold">360</span>
-          </span>
+          <a href="/">
+            <span className="font-bold text-2xl text-white">
+              Event <span className="text-[#FFD600] font-bold">360</span>
+            </span>
+          </a>
         </div>
         <div className="hidden md:flex items-center space-x-5">
           <NavLink to="/" className="text-white hover:text-[#FFD600]">
