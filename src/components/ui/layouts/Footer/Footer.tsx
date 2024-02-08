@@ -3,6 +3,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 import { CurrencyEur, Globe, PersonArmsSpread } from "@phosphor-icons/react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-[#1b1a14cc] text-white">
       <Container className="py-[48px]">
@@ -14,47 +15,47 @@ const Footer = () => {
           </div>
           <div>
             <ol className="space-y-2">
-              <li>Product</li>
-              <li>Price</li>
-              <li>Overview</li>
-              <li>Browse</li>
-              <li>Accessibility</li>
+              <li className="hover:text-[#FFD600]">Product</li>
+              <li className="hover:text-[#FFD600]">Price</li>
+              <li className="hover:text-[#FFD600]">Overview</li>
+              <li className="hover:text-[#FFD600]">Browse</li>
+              <li className="hover:text-[#FFD600]">Accessibility</li>
             </ol>
           </div>
           <div>
             <ol className="space-y-2">
-              <li>Solutions</li>
-              <li>Brainstorming</li>
-              <li>Idealion</li>
-              <li>Wirefirming</li>
-              <li>Research </li>
+              <li className="hover:text-[#FFD600]">Solutions</li>
+              <li className="hover:text-[#FFD600]">Brainstorming</li>
+              <li className="hover:text-[#FFD600]">Idealion</li>
+              <li className="hover:text-[#FFD600]">Wirefirming</li>
+              <li className="hover:text-[#FFD600]">Research </li>
             </ol>
           </div>
           <div>
             <ol className="space-y-2">
-              <li>Resources</li>
-              <li>Help Center</li>
-              <li>Blog</li>
-              <li>Tutorials</li>
-              <li>FAQs</li>
+              <li className="hover:text-[#FFD600]">Resources</li>
+              <li className="hover:text-[#FFD600]">Help Center</li>
+              <li className="hover:text-[#FFD600]">Blog</li>
+              <li className="hover:text-[#FFD600]">Tutorials</li>
+              <li className="hover:text-[#FFD600]">FAQs</li>
             </ol>
           </div>
           <div>
             <ol className="space-y-2">
-              <li>Support</li>
-              <li>Contact Us</li>
-              <li>Developers</li>
-              <li>Documentation</li>
-              <li>Intrigations</li>
+              <li className="hover:text-[#FFD600]">Support</li>
+              <li className="hover:text-[#FFD600]">Contact Us</li>
+              <li className="hover:text-[#FFD600]">Developers</li>
+              <li className="hover:text-[#FFD600]">Documentation</li>
+              <li className="hover:text-[#FFD600]">Intrigations</li>
             </ol>
           </div>
           <div>
             <ol className="space-y-2">
-              <li>Company</li>
-              <li>About</li>
-              <li>Press</li>
-              <li>Event</li>
-              <div className="flex items-center gap-2">
+              <li className="hover:text-[#FFD600]">Company</li>
+              <li className="hover:text-[#FFD600]">About</li>
+              <li className="hover:text-[#FFD600]">Press</li>
+              <li className="hover:text-[#FFD600]">Event</li>
+              <div className="flex items-center gap-2 hover:text-[#FFD600]">
                 <li>Request Demo</li>
                 <ArrowRight size={18} />
               </div>
@@ -63,22 +64,22 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-between sm:flex-row pt-5 mt-5 border-slate-600 border-t-2">
           <div>
-            <p> @ 2023. All rights reserved.</p>
+            <p> @ {currentYear}. All rights reserved.</p>
           </div>
 
-          <ol className="flex items-center gap-5">
-            <li>Terms</li>
-            <li>Privacy</li>
-            <li>Contact</li>
-            <li className="flex items-center gap-2">
+          <ol className="flex items-center gap-5 overflow-x-hidden">
+            <li className="hover:text-[#FFD600]">Terms</li>
+            <li className="hover:text-[#FFD600]">Privacy</li>
+            <li className="hover:text-[#FFD600]">Contact</li>
+            <li className="flex items-center gap-2 hover:text-[#FFD600]">
               <Globe size={18} />
               <span>EN</span>
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2 hover:text-[#FFD600]">
               <CurrencyEur size={18} />
               <span>EUR</span>
             </li>
-            <li className="border p-1 rounded-full">
+            <li className="border p-1 rounded-full hover:text-[#FFD600] hover:border-[#FFD600]">
               <PersonArmsSpread size={16} />
             </li>
           </ol>
