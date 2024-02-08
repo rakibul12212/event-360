@@ -9,44 +9,17 @@ const ValuableClient = () => {
       </h1>
       <Marquee>
         <div className="grid grid-cols-5 gap-28 w-full pt-[103px]">
-          <img src="../../../../public/assets/client/Company logo.png" alt="" />
-          <img
-            src="../../../../public/assets/client/Company logo (1).png"
-            alt=""
-          />
-          <img
-            src="../../../../public/assets/client/Company logo (2).png"
-            alt=""
-          />
-          <img
-            src="../../../../public/assets/client/Company logo (3).png"
-            alt=""
-          />
-          <img
-            src="../../../../public/assets/client/Company logo (4).png"
-            alt=""
-          />
+          <img src="/public/assets/client/Company logo.png" alt="" />
+          <img src="/public/assets/client/Company logo (1).png" alt="" />
+          <img src="/public/assets/client/Company logo (2).png" alt="" />
+          <img src="/public/assets/client/Company logo (3).png" alt="" />
+          <img src="/public/assets/client/Company logo (4).png" alt="" />
 
-          <img
-            src="../../../../public/assets/client/Company logo (5).png"
-            alt=""
-          />
-          <img
-            src="../../../../public/assets/client/Company logo (6).png"
-            alt=""
-          />
-          <img
-            src="../../../../public/assets/client/Company logo (7).png"
-            alt=""
-          />
-          <img
-            src="../../../../public/assets/client/Company logo (8).png"
-            alt=""
-          />
-          <img
-            src="../../../../public/assets/client/Company logo (9).png"
-            alt=""
-          />
+          <img src="/public/assets/client/Company logo (5).png" alt="" />
+          <img src="/public/assets/client/Company logo (6).png" alt="" />
+          <img src="/public/assets/client/Company logo (7).png" alt="" />
+          <img src="/public/assets/client/Company logo (8).png" alt="" />
+          <img src="/public/assets/client/Company logo (9).png" alt="" />
         </div>
       </Marquee>
     </Container>

@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import Pricing from "./Pricing/Pricing";
 import RecentEvent from "./RecentEvent/RecentEvent";
 import Subscribe from "./Subscribe/Subscribe";
+import Team from "./Team/Team";
 import Testimonial from "./Testimonial/Testimonial";
 import ValuableClient from "./ValuableClient/ValuableClient";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <RecentEvent></RecentEvent>
       <Testimonial></Testimonial>
       <ValuableClient></ValuableClient>
+      <Team></Team>
       <Subscribe></Subscribe>
       <AboutSection></AboutSection>
     </div>
