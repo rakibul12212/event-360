@@ -1,10 +1,90 @@
-import React from "react";
+import Container from "@/components/ui/Container";
+import { ArrowRight } from "@phosphor-icons/react";
+import { CurrencyEur, Globe, PersonArmsSpread } from "@phosphor-icons/react";
 
 const Footer = () => {
   return (
-    <div>
-      <p>this is footer</p>
-    </div>
+    <footer className="bg-[#1b1a14cc] text-white">
+      <Container className="py-[48px]">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div>
+            <span className="font-bold text-2xl text-white">
+              Event <span className="text-[#FFD600] font-bold">360</span>
+            </span>
+          </div>
+          <div>
+            <ol className="space-y-2">
+              <li>Product</li>
+              <li>Price</li>
+              <li>Overview</li>
+              <li>Browse</li>
+              <li>Accessibility</li>
+            </ol>
+          </div>
+          <div>
+            <ol className="space-y-2">
+              <li>Solutions</li>
+              <li>Brainstorming</li>
+              <li>Idealion</li>
+              <li>Wirefirming</li>
+              <li>Research </li>
+            </ol>
+          </div>
+          <div>
+            <ol className="space-y-2">
+              <li>Resources</li>
+              <li>Help Center</li>
+              <li>Blog</li>
+              <li>Tutorials</li>
+              <li>FAQs</li>
+            </ol>
+          </div>
+          <div>
+            <ol className="space-y-2">
+              <li>Support</li>
+              <li>Contact Us</li>
+              <li>Developers</li>
+              <li>Documentation</li>
+              <li>Intrigations</li>
+            </ol>
+          </div>
+          <div>
+            <ol className="space-y-2">
+              <li>Company</li>
+              <li>About</li>
+              <li>Press</li>
+              <li>Event</li>
+              <div className="flex items-center gap-2">
+                <li>Request Demo</li>
+                <ArrowRight size={18} />
+              </div>
+            </ol>
+          </div>
+        </div>
+        <div className="flex flex-col justify-between sm:flex-row pt-5 mt-5 border-slate-600 border-t-2">
+          <div>
+            <p> @ 2023. All rights reserved.</p>
+          </div>
+
+          <ol className="flex items-center gap-5">
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Contact</li>
+            <li className="flex items-center gap-2">
+              <Globe size={18} />
+              <span>EN</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <CurrencyEur size={18} />
+              <span>EUR</span>
+            </li>
+            <li className="border p-1 rounded-full">
+              <PersonArmsSpread size={16} />
+            </li>
+          </ol>
+        </div>
+      </Container>
+    </footer>
   );
 };
 

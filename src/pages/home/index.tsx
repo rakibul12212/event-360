@@ -1,4 +1,3 @@
-import AboutSection from "./AboutSection";
 import HeroSection from "./HeroSection/HeroSection";
 import Pricing from "./Pricing/Pricing";
 import RecentEvent from "./RecentEvent/RecentEvent";
@@ -17,7 +16,6 @@ const Home = () => {
       <ValuableClient></ValuableClient>
       <Team></Team>
       <Subscribe></Subscribe>
-      <AboutSection></AboutSection>
     </div>
   );
 };
