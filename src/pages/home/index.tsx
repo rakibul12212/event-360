@@ -1,3 +1,4 @@
+import Gallery from "./Gallery/Gallery";
 import HeroSection from "./HeroSection/HeroSection";
 import Pricing from "./Pricing/Pricing";
 import RecentEvent from "./RecentEvent/RecentEvent";
@@ -11,6 +12,7 @@ const Home = () => {
     <div>
       <HeroSection></HeroSection>
       <Pricing></Pricing>
+      <Gallery></Gallery>
       <RecentEvent></RecentEvent>
       <Testimonial></Testimonial>
       <ValuableClient></ValuableClient>
