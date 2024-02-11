@@ -1,4 +1,4 @@
-import React from "react";
+
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button/Button";
 const Contact = () => {

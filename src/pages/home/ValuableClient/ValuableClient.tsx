@@ -1,13 +1,13 @@
-import React from "react";
+
 import Container from "@/components/ui/Container";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 const ValuableClient = () => {
   return (
     <Container className="pt-[131px]">
       <h1 className="text-center font-extrabold text-[48px]">
         Our Valuable client
       </h1>
-      <Marquee>
+      {/* <Marquee> */}
         <div className="grid grid-cols-5 gap-28 w-full pt-[103px]">
           <img src="/public/assets/client/Company logo.png" alt="" />
           <img src="/public/assets/client/Company logo (1).png" alt="" />
@@ -21,7 +21,7 @@ const ValuableClient = () => {
           <img src="/public/assets/client/Company logo (8).png" alt="" />
           <img src="/public/assets/client/Company logo (9).png" alt="" />
         </div>
-      </Marquee>
+      {/* </Marquee> */}
     </Container>
   );
 };

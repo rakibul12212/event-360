@@ -1,8 +1,8 @@
 import App from "@/App";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
-import Home from "@/pages/home/Index";
-import React from "react";
+import Home from "@/pages/home/HomeIndex";
+
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -17,4 +17,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router; 
+export default router;
