@@ -1,3 +1,4 @@
+import EventItem from "./EventItem/EventItem";
 import Gallery from "./Gallery/Gallery";
 import HeroSection from "./HeroSection/HeroSection";
 import Pricing from "./Pricing/Pricing";
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection></HeroSection>
+      <EventItem></EventItem>
       <Pricing></Pricing>
       <Gallery></Gallery>
       <RecentEvent></RecentEvent>
