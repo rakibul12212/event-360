@@ -28,27 +28,27 @@ const Pricing = () => {
             <Button className="p-2 mb-5 w-full">Get this packages</Button>
             <ol className="font-semibold text-[12px] pb-[40px] space-y-2 ">
               <div className="flex gap-2 ">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>ten links available</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Own analytics olatform</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Mobile app</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Chat support</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>1000 users</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>tamplate library</li>
               </div>
             </ol>
@@ -70,27 +70,27 @@ const Pricing = () => {
             <Button className="p-2 mb-5 w-full">Get this packages</Button>
             <ol className="font-semibold text-[12px] pb-[40px] space-y-2">
               <div className="flex gap-2 ">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>ten links available</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Own analytics olatform</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Mobile app</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Chat support</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>1000 users</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>tamplate library</li>
               </div>
             </ol>
@@ -112,27 +112,27 @@ const Pricing = () => {
             <Button className="p-2 mb-5 w-full">Get this packages</Button>
             <ol className="font-semibold text-[12px] pb-[40px] space-y-2">
               <div className="flex gap-2 ">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>ten links available</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Own analytics olatform</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Mobile app</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>Chat support</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>1000 users</li>
               </div>
               <div className="flex gap-2">
-                <CheckMark />
+                <CheckMark children={undefined} />
                 <li>tamplate library</li>
               </div>
             </ol>

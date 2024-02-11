@@ -108,38 +108,38 @@ const Gallery = () => {
             posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
             ornare viverra. Ultrices faucibus neque velit risus ac id lorem.
           </p>
-          <ol className=" text-[12px] pb-[40px] space-y-2 ">
-            <div className="flex gap-2 items-center">
+          <ol className=" text-[18px] pb-[40px] space-y-2">
+            <div className="flex gap-2 items-center ">
               <CheckMark
-                className="w-4 h-4  rounded-full bg-gray-100 p-1 "
+                className="w-[20px] h-[20px]  rounded-full bg-gray-100 p-1 "
                 children={undefined}
               />
               <li>One day pas access all lecture</li>
             </div>
             <div className="flex gap-2">
               <CheckMark
-                className="w-4 h-4  rounded-full bg-gray-100 p-1 "
+                className="w-[20px] h-[20px]  rounded-full bg-gray-100 p-1 "
                 children={undefined}
               />
               <li>Lunch and Snack</li>
             </div>
             <div className="flex gap-2">
               <CheckMark
-                className="w-4 h-4  rounded-full bg-gray-100 p-1 "
+                className="w-[20px] h-[20px]  rounded-full bg-gray-100 p-1 "
                 children={undefined}
               />
               <li>Meet Event Speaker</li>
             </div>
             <div className="flex gap-2">
               <CheckMark
-                className="w-4 h-4  rounded-full bg-gray-100 p-1 "
+                className="w-[20px] h-[20px]  rounded-full bg-gray-100 p-1 "
                 children={undefined}
               />
               <li>Front Seat</li>
             </div>
             <div className="flex gap-2">
               <CheckMark
-                className="w-4 h-4  rounded-full bg-gray-100 p-1 "
+                className="w-[20px] h-[20px]  rounded-full bg-gray-100 p-1 "
                 children={undefined}
               />
               <li>One day pas access all lecture</li>

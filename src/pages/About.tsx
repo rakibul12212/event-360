@@ -1,8 +1,10 @@
+import Container from "@/components/ui/Container";
+
 const About = () => {
   return (
-    <div>
-      <p>about page</p>
-    </div>
+    <Container>
+      <div>about</div>
+    </Container>
   );
 };
 

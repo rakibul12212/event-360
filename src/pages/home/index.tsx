@@ -1,6 +1,7 @@
 import EventItem from "./EventItem/EventItem";
 import Gallery from "./Gallery/Gallery";
 import HeroSection from "./HeroSection/HeroSection";
+import OurServices from "./OurServices/OurServices";
 import Pricing from "./Pricing/Pricing";
 import RecentEvent from "./RecentEvent/RecentEvent";
 import Subscribe from "./Subscribe/Subscribe";
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection></HeroSection>
+      <OurServices></OurServices>
       <EventItem></EventItem>
       <Pricing></Pricing>
       <Gallery></Gallery>

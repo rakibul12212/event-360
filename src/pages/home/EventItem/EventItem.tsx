@@ -1,5 +1,4 @@
 import Container from "@/components/ui/Container";
-import React from "react";
 
 const EventItem = () => {
   return (
@@ -14,7 +13,6 @@ const EventItem = () => {
       <div>
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* <!-- First Column --> */}
             <div className="col-span-1 md:col-span-1">
               <div className="bg-gray-200 rounded-md p-2 w-full h-auto">
                 <img
@@ -26,10 +24,9 @@ const EventItem = () => {
               </div>
             </div>
 
-            {/* <!-- Second Column --> */}
             <div className="col-span-1 md:col-span-1 ">
               <div className="  rounded-md">
-                <div className="bg-gray-200 rounded-md p-5 w-full h-auto">
+                <div className="bg-gray-200 rounded-md p-2 w-full h-auto">
                   <img
                     src="https://i.ibb.co/jrdBZTt/Rectangle-2989-1.png"
                     alt="Image 5"
@@ -59,7 +56,6 @@ const EventItem = () => {
               </div>
             </div>
 
-            {/* <!-- Third Column --> */}
             <div className=" col-span-1 md:col-span-14">
               <div className="grid gap-y-4 p-4 rounded-md">
                 <div className="bg-gray-200 rounded-md p-5 w-full h-auto">
