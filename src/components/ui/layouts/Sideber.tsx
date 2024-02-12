@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { LayoutDashboard } from "lucide-react";
+import { Home, LayoutDashboard } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const Sideber = () => {
@@ -47,6 +47,48 @@ const Sideber = () => {
         >
           <LayoutDashboard className="shrink-0" />
           <span className="truncate ">Service list</span>
+        </NavLink>
+        <NavLink
+          to="/admin/item-list"
+          className={({ isActive }) =>
+            cn(
+              "bg-gray-300 p-3 rounded-md hover:bg-gradient-to-r from-amber-400 to-amber-600 transition-all flex items-center gap-2",
+              {
+                "bg-gradient-to-r from-amber-400 to-amber-600": isActive,
+              }
+            )
+          }
+        >
+          <LayoutDashboard className="shrink-0" />
+          <span className="truncate ">item list</span>
+        </NavLink>
+        <NavLink
+          to="/admin/add-item"
+          className={({ isActive }) =>
+            cn(
+              "bg-gray-300 p-3 rounded-md hover:bg-gradient-to-r from-amber-400 to-amber-600 transition-all flex items-center gap-2",
+              {
+                "bg-gradient-to-r from-amber-400 to-amber-600": isActive,
+              }
+            )
+          }
+        >
+          <LayoutDashboard className="shrink-0" />
+          <span className="truncate ">Add-item</span>
+        </NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            cn(
+              "bg-gray-300 p-3 rounded-md hover:bg-gradient-to-r from-amber-400 to-amber-600 transition-all flex items-center gap-2",
+              {
+                "bg-gradient-to-r from-amber-400 to-amber-600": isActive,
+              }
+            )
+          }
+        >
+          <Home className="shrink-0" />
+          <span className="truncate ">Back to Home</span>
         </NavLink>
       </nav>
     </aside>

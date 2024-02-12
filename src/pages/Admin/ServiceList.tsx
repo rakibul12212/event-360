@@ -15,7 +15,7 @@ const ServiceList = () => {
 
   return (
     <div>
-      {/* {data.map((item) => (
+      {data.map((item) => (
         <div key={item.id}>
           {item.data.map((service) => (
             <div key={service.id}>
@@ -23,10 +23,10 @@ const ServiceList = () => {
             </div>
           ))}
         </div>
-      ))} */}
-      {data.map((item) => (
-        <h1 key={item.id}>{item.title}</h1>
       ))}
+      {/* {data.map((item) => (
+        <h1 key={item.id}>{item.title}</h1>
+      ))} */}
     </div>
   );
 };
