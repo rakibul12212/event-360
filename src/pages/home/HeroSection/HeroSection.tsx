@@ -28,7 +28,7 @@ const HeroSection = () => {
     <div className="bg">
       <Container>
         <motion.div
-          className="text-center  text-white pt-28 md:pt-48 space-y-6 pb-64 "
+          className="text-center  text-white pt-28 md:pt-60 space-y-6 pb-64 "
           variants={intro}
           initial="hidden"
           animate="visible"

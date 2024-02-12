@@ -1,10 +1,17 @@
 import CheckMark from "@/components/ui/CheckMark/CheckMark";
 import Container from "@/components/ui/Container";
+import useScrollGrowHook from "@/Hooks/scrollGrowHook";
+import { motion } from "framer-motion";
 
 const Gallery = () => {
+  const { style, componentRef } = useScrollGrowHook();
   return (
     <Container className="pt-[131px]">
-      <div className="flex flex-wrap justify-center items-center gap-[70px] ">
+      <motion.div
+        className="flex flex-wrap justify-center items-center gap-[70px] "
+        style={style}
+        ref={componentRef}
+      >
         <div className="grid grid-cols-4  ">
           {/* Column 1 */}
           <div className="col-span-1 place-self-center">
@@ -146,7 +153,7 @@ const Gallery = () => {
             </div>
           </ol>
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };
