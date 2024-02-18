@@ -3,7 +3,7 @@ import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button/Button";
 const Contact = () => {
   return (
-    <Container>
+    <Container className="py-20">
       <div className="py-10 flex justify-center items-center">
         <div>
           <p className="text-xl">Online order</p>

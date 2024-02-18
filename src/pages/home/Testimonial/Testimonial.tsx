@@ -4,7 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
+
+import useScrollGrowHook from "@/Hooks/scrollGrowHook";
+import { motion } from "framer-motion";
 const Testimonial = () => {
+  const { style, componentRef } = useScrollGrowHook();
   const settings = {
     dots: false,
     infinite: true,
@@ -25,7 +29,11 @@ const Testimonial = () => {
 
   return (
     <Container>
-      <div className="flex sm:flex-wrap justify-between items-center py-[88px]">
+      <motion.div
+        className="flex sm:flex-wrap justify-between items-center py-[88px]"
+        style={style}
+        ref={componentRef}
+      >
         <h1 className="font-extrabold text-[48px]">
           What Our Client Said about us
         </h1>
@@ -69,7 +77,7 @@ const Testimonial = () => {
             </svg>
           </button>
         </div>
-      </div>
+      </motion.div>
 
       <Slider {...settings} ref={sliderRef}>
         <div key={1}>
