@@ -1,15 +1,39 @@
-
 import Container from "@/components/ui/Container";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useRef } from "react";
 const Testimonial = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+  const sliderRef = useRef();
+  const slideNext = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const slidePrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
   return (
-    <Container >
+    <Container>
       <div className="flex sm:flex-wrap justify-between items-center py-[88px]">
         <h1 className="font-extrabold text-[48px]">
           What Our Client Said about us
         </h1>
         <div className="flex gap-3" style={{ textAlign: "center" }}>
-          <button className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer  transition-opacity duration-300 ease-in-out">
+          <button
+            className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600  text-black cursor-pointer  transition-opacity duration-300 ease-in-out"
+            onClick={slidePrev}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -25,7 +49,10 @@ const Testimonial = () => {
               />
             </svg>
           </button>
-          <button className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer  transition-opacity duration-300 ease-in-out">
+          <button
+            className="p-5 rounded-full bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer  transition-opacity duration-300 ease-in-out"
+            onClick={slideNext}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -44,9 +71,9 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="grid  xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <Slider {...settings} ref={sliderRef}>
         <div key={1}>
-          <div className="space-y-2 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
+          <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
             <div className="flex sm:flex-wrap justify-start items-center gap-3">
               <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
               <div className="space-y-1">
@@ -62,7 +89,7 @@ const Testimonial = () => {
           </div>
         </div>
         <div key={2}>
-          <div className="space-y-2 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
+          <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
             <div className="flex justify-start items-center gap-3">
               <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
               <div className="space-y-1">
@@ -78,7 +105,7 @@ const Testimonial = () => {
           </div>
         </div>
         <div key={3}>
-          <div className="space-y-2 p-5 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
+          <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
             <div className="flex justify-start items-center gap-3">
               <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
               <div className="space-y-1">
@@ -93,7 +120,7 @@ const Testimonial = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Slider>
     </Container>
   );
 };

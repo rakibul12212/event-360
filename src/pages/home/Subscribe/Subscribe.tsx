@@ -1,8 +1,6 @@
 import Button from "@/components/ui/Button/Button";
 import Container from "@/components/ui/Container";
 
-
-
 const Subscribe = () => {
   return (
     <div className="bg-[#3f3d2f27]">
