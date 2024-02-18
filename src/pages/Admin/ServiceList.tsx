@@ -15,18 +15,23 @@ const ServiceList = () => {
 
   return (
     <div>
-      {data.map((item) => (
-        <div key={item.id}>
-          {item.data.map((service) => (
-            <div key={service.id}>
-              <h2>{service.title}</h2>
-            </div>
-          ))}
+      <h1>All Data</h1>
+      {data ? (
+        <div>
+          <h2>Services</h2>
+          <ul>
+            {data[0].services.map((service) => (
+              <li key={service["services-id"]}>
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+                <img src={service.image} alt="" />
+              </li>
+            ))}
+          </ul>
         </div>
-      ))}
-      {/* {data.map((item) => (
-        <h1 key={item.id}>{item.title}</h1>
-      ))} */}
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   );
 };
