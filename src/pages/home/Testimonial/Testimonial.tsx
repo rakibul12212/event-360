@@ -1,12 +1,14 @@
 import Container from "@/components/ui/Container";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
-
 import useScrollGrowHook from "@/Hooks/scrollGrowHook";
 import { motion } from "framer-motion";
+
+import { getServices } from "@/api/admin/services/service.api";
+import { useQuery } from "@tanstack/react-query";
+
 const Testimonial = () => {
   const { style, componentRef } = useScrollGrowHook();
   const settings = {
@@ -26,6 +28,14 @@ const Testimonial = () => {
   const slidePrev = () => {
     sliderRef.current.slickPrev();
   };
+
+  const { data, isLoading } = useQuery({
+    queryKey: ["services"],
+    queryFn: getServices,
+  });
+  if (isLoading) {
+    return <p>loading...</p>;
+  }
 
   return (
     <Container>
@@ -80,54 +90,24 @@ const Testimonial = () => {
       </motion.div>
 
       <Slider {...settings} ref={sliderRef}>
-        <div key={1}>
-          <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
-            <div className="flex sm:flex-wrap justify-start items-center gap-3">
-              <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
-              <div className="space-y-1">
-                <h1 className="font-md text-[28px]">Amelia Joseph</h1>
-                <p className="text-[20px]">Chief Manager</p>
+        {data ? (
+          data[0].testimonials.map((testimonial) => (
+            <div key={testimonial["testimonials-id"]}>
+              <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
+                <div className="flex sm:flex-wrap justify-start items-center gap-3">
+                  <img src={testimonial.image} alt="" />
+                  <div className="space-y-1">
+                    <h1 className="font-md text-[28px]">{testimonial.name}</h1>
+                    <p className="text-[20px]">{testimonial.designation}</p>
+                  </div>
+                </div>
+                <p className="text-[16px]">{testimonial.description}</p>
               </div>
             </div>
-            <p className="text-[16px]">
-              My vision came alive effortlessly. Their blend of casual and
-              professional approach made the process a breeze. Creativity
-              flowed, and the results were beyond my expectations.
-            </p>
-          </div>
-        </div>
-        <div key={2}>
-          <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
-            <div className="flex justify-start items-center gap-3">
-              <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
-              <div className="space-y-1">
-                <h1 className="font-md text-[28px]">Amelia Joseph</h1>
-                <p className="text-[20px]">Chief Manager</p>
-              </div>
-            </div>
-            <p className="text-[16px]">
-              My vision came alive effortlessly. Their blend of casual and
-              professional approach made the process a breeze. Creativity
-              flowed, and the results were beyond my expectations.
-            </p>
-          </div>
-        </div>
-        <div key={3}>
-          <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
-            <div className="flex justify-start items-center gap-3">
-              <img src="https://i.ibb.co/T1scKJw/Ellipse-80.png" alt="" />
-              <div className="space-y-1">
-                <h1 className="font-md text-[28px]">Amelia Joseph</h1>
-                <p className="text-[20px]">Chief Manager</p>
-              </div>
-            </div>
-            <p className="text-[16px]">
-              My vision came alive effortlessly. Their blend of casual and
-              professional approach made the process a breeze. Creativity
-              flowed, and the results were beyond my expectations.
-            </p>
-          </div>
-        </div>
+          ))
+        ) : (
+          <p className="text-center items-center">Loading...</p>
+        )}
       </Slider>
     </Container>
   );
