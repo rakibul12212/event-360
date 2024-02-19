@@ -5,9 +5,18 @@ import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
 import useScrollGrowHook from "@/Hooks/scrollGrowHook";
 import { motion } from "framer-motion";
-
 import { getServices } from "@/api/admin/services/service.api";
 import { useQuery } from "@tanstack/react-query";
+
+interface TestimonialProps {
+  testimonial: {
+    "testimonials-id": string;
+    image: string;
+    name: string;
+    designation: string;
+    description: string;
+  };
+}
 
 const Testimonial = () => {
   const { style, componentRef } = useScrollGrowHook();
@@ -20,20 +29,20 @@ const Testimonial = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-  const sliderRef = useRef();
+  const sliderRef = useRef<Slider>(null);
   const slideNext = () => {
-    sliderRef.current.slickNext();
+    sliderRef.current?.slickNext();
   };
 
   const slidePrev = () => {
-    sliderRef.current.slickPrev();
+    sliderRef.current?.slickPrev();
   };
 
   const { data, isLoading } = useQuery({
     queryKey: ["services"],
     queryFn: getServices,
   });
-  if (isLoading) {
+  if (isLoading || !data) {
     return <p>loading...</p>;
   }
 
@@ -56,13 +65,13 @@ const Testimonial = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
               />
             </svg>
@@ -75,13 +84,13 @@ const Testimonial = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
               />
             </svg>
@@ -90,8 +99,8 @@ const Testimonial = () => {
       </motion.div>
 
       <Slider {...settings} ref={sliderRef}>
-        {data ? (
-          data[0].testimonials.map((testimonial) => (
+        {data[0].testimonials.map(
+          (testimonial: TestimonialProps["testimonial"]) => (
             <div key={testimonial["testimonials-id"]}>
               <div className="space-y-2 p-5 mx-2 rounded-xl bg-[#D9D9D9] hover:bg-gradient-to-r from-amber-400 to-amber-600 p-4 text-black cursor-pointer">
                 <div className="flex sm:flex-wrap justify-start items-center gap-3">
@@ -104,9 +113,7 @@ const Testimonial = () => {
                 <p className="text-[16px]">{testimonial.description}</p>
               </div>
             </div>
-          ))
-        ) : (
-          <p className="text-center items-center">Loading...</p>
+          )
         )}
       </Slider>
     </Container>

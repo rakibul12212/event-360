@@ -62,7 +62,7 @@ const AddService = () => {
               ></textarea>
             </div>
             <Button
-              type="submit"
+              
               className="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-colors duration-300"
             >
               Submit
