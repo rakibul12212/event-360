@@ -37,7 +37,7 @@ const ServiceList = () => {
                         className="w-5 h-5 rounded-full bg-gray-100 p-1"
                         children={undefined}
                       />
-                      <li>{detail["details-text"]}</li>
+                      <li>{detail.text}</li>
                     </div>
                   ))}
                 </ol>
@@ -55,7 +55,7 @@ const ServiceList = () => {
                         className="w-5 h-5 rounded-full bg-gray-100 p-1"
                         children={undefined}
                       />
-                      <li>{detail["details-text"]}</li>
+                      <li>{detail.text}</li>
                     </div>
                   ))}
                 </ol>

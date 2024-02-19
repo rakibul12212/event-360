@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Dashboard = () => {
-    return (
-        <div>
-           <p>dashboard</p> 
-        </div>
-    );
+  return (
+    <div className="text-center text-6xl py-20">
+      <p>Event360 dashboard</p>
+    </div>
+  );
 };
 
 export default Dashboard;

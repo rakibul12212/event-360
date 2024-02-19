@@ -1,12 +1,10 @@
 import Button from "@/components/ui/Button/Button";
 import CheckMark from "@/components/ui/CheckMark/CheckMark";
 import Container from "@/components/ui/Container";
-import useScrollGrowHook from "@/Hooks/scrollGrowHook";
-import { motion } from "framer-motion";
 import { getServices } from "@/api/admin/services/service.api";
 import { useQuery } from "@tanstack/react-query";
+import "animate.css";
 const Pricing = () => {
-  const { style, componentRef } = useScrollGrowHook();
   const { data, isLoading } = useQuery({
     queryKey: ["services"],
     queryFn: getServices,
@@ -15,10 +13,10 @@ const Pricing = () => {
     return <p>loading...</p>;
   }
   return (
-    <Container>
-      <motion.div style={style} ref={componentRef}>
-        <div className="text-center space-y-6 py-32">
-          <p className="text-5xl font-bold">Explore our pricing plans</p>
+    <Container className="animate__animated animate__bounceInLeft">
+      <div>
+        <div className="text-center space-y-6 py-32 ">
+          <p className="text-5xl font-bold ">Explore our pricing plans</p>
           <p className="text-xs mx-auto max-w-[800px]">
             Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
             ornare viverra. Ultrices faucibus neque velit risus ac id lorem.Ut
@@ -65,7 +63,7 @@ const Pricing = () => {
             <p className="text-center items-center">Loading...</p>
           )}
         </div>
-      </motion.div>
+      </div>
     </Container>
   );
 };

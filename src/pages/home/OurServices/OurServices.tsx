@@ -1,12 +1,13 @@
-import Container from "@/components/ui/Container";
-import { motion } from "framer-motion";
 import useScrollGrowHook from "@/Hooks/scrollGrowHook";
+import { motion } from "framer-motion";
+import Container from "@/components/ui/Container";
 import CheckMark from "@/components/ui/CheckMark/CheckMark";
 import { getServices } from "@/api/admin/services/service.api";
 import { useQuery } from "@tanstack/react-query";
-
+import "animate.css";
 const OurServices = () => {
   const { style, componentRef } = useScrollGrowHook();
+
   const { data, isLoading } = useQuery({
     queryKey: ["services"],
     queryFn: getServices,
@@ -16,14 +17,14 @@ const OurServices = () => {
   }
 
   return (
-    <Container>
+    <Container className="animate__animated animate__bounceInRight">
       <div>
         <motion.div
-          className="pt-[131px] pb-[54px]"
+          className="pt-[131px] pb-[54px] "
           style={style}
           ref={componentRef}
         >
-          <h1 className="text-5xl font-bold text-center">Our Services</h1>
+          <h1 className="text-5xl font-bold text-center ">Our Services</h1>
           <p className="text-[18px] pt-[12px] text-center mx-auto max-w-[800px]">
             Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
             ornare viverra. Ultrices faucibus neque velit risus ac id lorem.
@@ -53,7 +54,7 @@ const OurServices = () => {
                           className="w-5 h-5 rounded-full bg-gray-100 p-1"
                           children={undefined}
                         />
-                        <li>{detail["details-text"]}</li>
+                        <li>{detail.text}</li>
                       </div>
                     ))}
                   </ol>
@@ -71,7 +72,7 @@ const OurServices = () => {
                           className="w-5 h-5 rounded-full bg-gray-100 p-1"
                           children={undefined}
                         />
-                        <li>{detail["details-text"]}</li>
+                        <li>{detail.text}</li>
                       </div>
                     ))}
                   </ol>

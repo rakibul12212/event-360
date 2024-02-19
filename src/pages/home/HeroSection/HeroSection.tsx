@@ -34,7 +34,7 @@ const introChildren2 = {
 
 const HeroSection = () => {
   return (
-    <div className="bg">
+    <div className="bg ">
       <Container>
         <motion.div
           className="text-center  text-white pt-28 md:pt-60 space-y-8 pb-64 "
