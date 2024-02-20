@@ -5,14 +5,31 @@ import CheckMark from "@/components/ui/CheckMark/CheckMark";
 import { getServices } from "@/api/admin/services/service.api";
 import { useQuery } from "@tanstack/react-query";
 import "animate.css";
+
+interface ServiceDetail {
+  id: string;
+  text: string;
+}
+
+interface Service {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  services: any;
+  "services-id": string;
+  image: string;
+  title: string;
+  details: ServiceDetail[];
+  text: string;
+}
+
 const OurServices = () => {
   const { style, componentRef } = useScrollGrowHook();
 
-  const { data, isLoading } = useQuery({
+  const { data, isLoading } = useQuery<Service[]>({
     queryKey: ["services"],
     queryFn: getServices,
   });
-  if (isLoading) {
+
+  if (isLoading || !data) {
     return <p>loading...</p>;
   }
 
@@ -31,11 +48,9 @@ const OurServices = () => {
           </p>
         </motion.div>
 
-        {/* ----- */}
-
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {data ? (
-            data[0].services.map((service) => (
+            data[0].services.map((service: Service) => (
               <div
                 key={service["services-id"]}
                 className="max-w-sm rounded-md overflow-hidden shadow-sm mx-auto relative bg-gradient-to-t from-transparent to-gray-100"
@@ -86,8 +101,6 @@ const OurServices = () => {
             <p className="text-center items-center">Loading...</p>
           )}
         </div>
-
-        {/* ---- */}
       </div>
     </Container>
   );

@@ -34,7 +34,7 @@ const ServiceList = () => {
         Service List
       </p>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {data[0].services.map((service) => (
+        {data[0].services.map((service: Service) => (
           <div
             key={service["services-id"]}
             className="max-w-sm rounded-md overflow-hidden shadow-sm mx-auto relative bg-gradient-to-t from-transparent to-gray-100"

@@ -1,7 +1,7 @@
 
 
 export const getServices = async () => {
-    return await fetch("http://localhost:5000/data").then((res) => res.json());
+    return await fetch("https://event360-server-eta.vercel.app/data").then((res) => res.json());
   };
 
 
