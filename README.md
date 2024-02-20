@@ -1,30 +1,84 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Event360
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+"Event360: Your comprehensive platform for event planning, management, and execution."
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Run Locally
 
-- Configure the top-level `parserOptions` property like this:
+Clone the project
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+  event360-client : git clone https://github.com/rakibul12212/event-360-client.git
+
+  event360-server : https://github.com/rakibul12212/event-360-server.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+# Documentation
+
+## Technology Stack :
+ - Typescript
+ - React
+
+## Landing Page:
+ - Navbar
+ - Header : dynamically fetched from an API
+ - Event Items : dynamically fetched from an API
+ - Gallery : dynamically fetched from an API
+ - Review : dynamically fetched from an API
+ - Recent Events : dynamically fetched from an API
+ - Pricing
+ - Client
+ - Team
+ - Subscribtion
+ - Footer
+ - Dashboard Section
+
+## data fetching and state management
+- Tanstack Query
+
+## Animation
+  ### Framer Motion
+   [for scroll use "useScroll:Track element position"]
+   [In header use "scaleValues" and "opacityValues" for styling]
+  ### Animate.css 
+
+## Icon
+ - phosphor-icons 
+ - lucide-react
+
+## carousel
+ - slick-carousel
+
+## event360-server link : https://github.com/rakibul12212/event-360-server
+
+## event360-server vercel deploy link : https://event360-server-eta.vercel.app/data 
+[Sometime it needs several reloads for load data]
+
+## Dashboard route : https://symphonious-jalebi-1b20d4.netlify.app/admin/dashboard
+
+
+## Demo
+
+- link : https://symphonious-jalebi-1b20d4.netlify.app/
+
