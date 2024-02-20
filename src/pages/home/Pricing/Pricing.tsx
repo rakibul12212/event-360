@@ -4,9 +4,26 @@ import Container from "@/components/ui/Container";
 import { getServices } from "@/api/admin/services/service.api";
 import { useQuery } from "@tanstack/react-query";
 import "animate.css";
+
+interface PlanDetail {
+  id: string;
+  text: string;
+}
+
+interface Plan {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  plans: any;
+  "plans-id": string;
+  header: string;
+  title: string;
+  price: string;
+  details: PlanDetail[];
+  text: string;
+}
+
 const Pricing = () => {
   const { data, isLoading } = useQuery({
-    queryKey: ["services"],
+    queryKey: ["plans"],
     queryFn: getServices,
   });
   if (isLoading) {
@@ -27,7 +44,7 @@ const Pricing = () => {
         {/* card */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-[32px]">
           {data ? (
-            data[0].plans.map((plan) => (
+            data[0].plans.map((plan: Plan) => (
               <div key={plan["plans-id"]}>
                 <div className="border rounded-md hover:bg-[#EA9B00] shadow-xl">
                   <div className="px-5 py-5">
