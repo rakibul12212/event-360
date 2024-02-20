@@ -1,11 +1,19 @@
+import useScrollGrowHook from "@/Hooks/scrollGrowHook";
+import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Marquee from "react-fast-marquee";
+
 const ValuableClient = () => {
+  const { style, componentRef } = useScrollGrowHook();
   return (
     <Container className="pt-[131px]">
-      <h1 className="text-center font-extrabold text-[48px]">
+      <motion.h1
+        className="text-center font-extrabold text-[48px]"
+        style={style}
+        ref={componentRef}
+      >
         Our Valuable client
-      </h1>
+      </motion.h1>
       <Marquee>
         <div className="grid grid-cols-5 gap-28 w-full pt-[103px]">
           <img src="https://i.ibb.co/DkgHwST/Company-logo.png" alt="" />

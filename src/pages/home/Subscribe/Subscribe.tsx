@@ -1,9 +1,11 @@
 import Button from "@/components/ui/Button/Button";
 import Container from "@/components/ui/Container";
-
+import useScrollGrowHook from "@/Hooks/scrollGrowHook";
+import { motion } from "framer-motion";
 const Subscribe = () => {
+   const { style, componentRef } = useScrollGrowHook();
   return (
-    <div className="bg-[#3f3d2f27]">
+    <motion.div className="bg-[#3f3d2f27]" style={style} ref={componentRef}>
       <Container>
         <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-4 ">
           <div>
@@ -29,7 +31,7 @@ const Subscribe = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 
