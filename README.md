@@ -1,8 +1,8 @@
 
-# Event360
+# Planorama
 
 
-"Event360: Your comprehensive platform for event planning, management, and execution."
+"Planorama: Your comprehensive platform for event planning, management, and execution."
 
 
 ## Run Locally
@@ -10,9 +10,7 @@
 Clone the project
 
 ```bash
-  event360-client : git clone https://github.com/rakibul12212/event-360-client.git
-
-  event360-server : https://github.com/rakibul12212/event-360-server.git
+  Planorama-client : git clone https://github.com/rakibul12212/planoroma-client.git
 ```
 
 Go to the project directory
@@ -26,13 +24,6 @@ Install dependencies
 ```bash
   npm install
 ```
-
-Start the server
-
-```bash
-  npm run start
-```
-
 
 # Documentation
 
@@ -70,15 +61,9 @@ Start the server
 ## carousel
  - slick-carousel
 
-## event360-server link : https://github.com/rakibul12212/event-360-server
-
-## event360-server vercel deploy link : https://event360-server-eta.vercel.app/data 
-[Sometime it needs several reloads for load data]
-
 ## Dashboard route : https://symphonious-jalebi-1b20d4.netlify.app/admin/dashboard
-
 
 ## Demo
 
-- link : https://symphonious-jalebi-1b20d4.netlify.app/
+- link : https://planoroma-client.vercel.app/
 
