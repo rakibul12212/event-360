@@ -43,8 +43,7 @@ const OurServices = () => {
         >
           <h1 className="text-5xl font-bold text-center ">Our Services</h1>
           <p className="text-[18px] pt-[12px] text-center mx-auto max-w-[800px]">
-            Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
-            ornare viverra. Ultrices faucibus neque velit risus ac id lorem.
+          Seamlessly orchestrating every detail to bring your vision to life and create unforgettable experiences!
           </p>
         </motion.div>
 

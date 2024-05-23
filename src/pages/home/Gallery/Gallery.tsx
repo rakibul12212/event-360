@@ -19,14 +19,14 @@ const Gallery = () => {
               <div>
                 <img
                   src="https://i.ibb.co/xM12njv/Picture.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
               <div>
                 <img
                   src="https://i.ibb.co/d0nQHwf/Picture-1.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -39,21 +39,21 @@ const Gallery = () => {
               <div>
                 <img
                   src="https://i.ibb.co/82Nq6Dt/Picture-2.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
               <div>
                 <img
                   src="https://i.ibb.co/RTsgFv1/Picture-3.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
               <div>
                 <img
                   src="https://i.ibb.co/7bVBLgg/Picture-4.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -66,21 +66,21 @@ const Gallery = () => {
               <div>
                 <img
                   src="https://i.ibb.co/HqcQp2j/Picture-5.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
               <div>
                 <img
                   src="https://i.ibb.co/Bg9qX54/Picture-6.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
               <div>
                 <img
                   src="https://i.ibb.co/31Q4Y0n/Picture-7.png"
-                  alt=""
+                  alt="imgimg"
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -93,14 +93,14 @@ const Gallery = () => {
               <div>
                 <img
                   src="https://i.ibb.co/kG7fHnZ/Picture-8.png"
-                  alt=""
+                  alt="img"
                   className="object-cover w-full h-full"
                 />
               </div>
               <div>
                 <img
                   src="https://i.ibb.co/zN8T9Jq/Picture-9.png"
-                  alt=""
+                  alt="img"
                   className="object-cover  h-full"
                 />
               </div>
@@ -110,10 +110,7 @@ const Gallery = () => {
         <div>
           <h1 className="font-extrabold text-[48px] pb-[24px]">Gallery</h1>
           <p className="text-[18px] max-w-[518px] pb-[35px]">
-            Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
-            ornare viverra. Ultrices faucibus neque velit risus ac id lorem.Ut
-            posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
-            ornare viverra. Ultrices faucibus neque velit risus ac id lorem.
+          Elevate your website with a visually engaging showcase for your images, maximizing viewer engagement.
           </p>
           <ol className=" text-[18px] pb-[40px] space-y-2">
             <div className="flex gap-2 items-center ">

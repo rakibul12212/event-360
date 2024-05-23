@@ -8,18 +8,16 @@ const Footer = () => {
     <footer className="bg-stone-800 text-white">
       <Container className="py-[48px]">
         <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          
           <div>
+            <ol className="space-y-2"> 
           <a href="/" className="font-bold text-amber-400 border rounded px-4 py-2">
           Planorama
           </a>
-          </div>
-          <div>
-            <ol className="space-y-2">
               <li className="hover:text-[#FFD600]">Product</li>
               <li className="hover:text-[#FFD600]">Price</li>
               <li className="hover:text-[#FFD600]">Overview</li>
-              <li className="hover:text-[#FFD600]">Browse</li>
-              <li className="hover:text-[#FFD600]">Accessibility</li>
+             
             </ol>
           </div>
           <div>

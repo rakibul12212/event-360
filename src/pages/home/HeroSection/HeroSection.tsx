@@ -37,20 +37,20 @@ const HeroSection = () => {
     <div className="bg">
       <Container>
         <motion.div
-          className="text-center  text-white pt-14 md:pt-32 space-y-8 pb-32 "
+          className="text-center  text-white pt-28 md:pt-64 space-y-8 pb-64 "
           variants={intro}
           initial="hidden"
           animate="visible"
         >
           <motion.p
-            className=" text-4xl md:text-5xl lg:text-[64px] pb-[8px] font-extrabold"
+            className="bg-gradient-to-r from-amber-200 to-amber-500 text-transparent bg-clip-text text-4xl md:text-5xl lg:text-[64px] pb-[8px] font-extrabold"
             variants={introChildren}
           >
             Introducing Our Latest Winter Wonderland Event Experiences!
           </motion.p>
           
           <motion.p
-            className="text-[20px] text-[#DFDFDF] mx-auto max-w-[900px] pb=[32px]"
+            className="text-[20px] text-white mx-auto max-w-[900px] pb=[32px]"
             variants={introChildren2}
           >
             Welcome to Planorama - Where Events Come to Life! Your premier destination for seamless event management solutions. Let's craft unforgettable experiences together

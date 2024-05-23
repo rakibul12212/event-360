@@ -9,8 +9,7 @@ const EventItem = () => {
         <div className="pt-[131px] pb-[54px]">
           <h1 className="text-5xl font-bold text-center">Event Items</h1>
           <p className="text-[18px] pt-[12px] text-center mx-auto max-w-[800px]">
-            Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
-            ornare viverra. Ultrices faucibus neque velit risus ac id lorem.
+          Your Passport to Inspiring Moments and Unforgettable Experiences! 
           </p>
         </div>
 

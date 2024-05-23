@@ -25,7 +25,7 @@ const NavBar = ({ scrollThreshold = 0 }) => {
         isScrolled ? `bg-stone-600` : `bg-[#1b1a14cc]`
       }`}
     >
-      <nav className="h-16 sticky-nav h-full w-full max-w-[1340px]  mx-auto px-10 flex justify-between items-center">
+      <nav className="h-16 sticky-nav h-full w-full max-w-[1340px]  mx-auto px-5 flex justify-between items-center">
         <div>
           <a href="/" className="font-bold text-amber-400 border rounded px-4 py-2">
           Planorama

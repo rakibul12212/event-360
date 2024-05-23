@@ -15,7 +15,7 @@ const ValuableClient = () => {
         Our Valuable client
       </motion.h1>
       <Marquee>
-        <div className="grid grid-cols-5 gap-28 w-full pt-[103px]">
+        <div className="grid grid-cols-5 gap-20 w-full pt-[103px]">
           <img src="https://i.ibb.co/DkgHwST/Company-logo.png" alt="" />
           <img src="https://i.ibb.co/5Y1BmqB/Company-logo-1.png" alt="" />
           <img src="https://i.ibb.co/SmCbPs1/Company-logo-2.png" alt="" />

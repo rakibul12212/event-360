@@ -15,9 +15,7 @@ const RecentEvent = () => {
               Recent Event
             </h1>
             <p className="text-[18px] max-w-[518px] ">
-              Ut posuere felis arcu tellus tempus in in ultricies. Gravida id
-              nibh ornare viverra. Ultrices faucibus neque velit risus ac id
-              lorem.
+            An exclusive event uniting industry leaders for strategic insights, networking, and collaboration. Featuring keynote presentations, panel discussions, and interactive workshops, attendees gained valuable knowledge and forged new partnerships. The summit concluded with a gala dinner, celebrating achievements and fostering a spirit of innovation and growth. 
             </p>
             <Button className="mt-[24px]">Learn more</Button>
           </div>
