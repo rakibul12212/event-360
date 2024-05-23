@@ -5,15 +5,13 @@ import { CurrencyEur, Globe, PersonArmsSpread } from "@phosphor-icons/react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-[#1b1a14cc] text-white">
+    <footer className="bg-stone-800 text-white">
       <Container className="py-[48px]">
         <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
           <div>
-            <a href="/">
-              <span className="font-bold text-2xl text-white">
-                Event <span className="text-[#FFD600] font-bold">360</span>
-              </span>
-            </a>
+          <a href="/" className="font-bold text-amber-400 border rounded px-4 py-2">
+          Planorama
+          </a>
           </div>
           <div>
             <ol className="space-y-2">

@@ -34,33 +34,26 @@ const introChildren2 = {
 
 const HeroSection = () => {
   return (
-    <div className="bg ">
+    <div className="bg">
       <Container>
         <motion.div
-          className="text-center  text-white pt-28 md:pt-60 space-y-8 pb-64 "
+          className="text-center  text-white pt-14 md:pt-32 space-y-8 pb-32 "
           variants={intro}
           initial="hidden"
           animate="visible"
         >
           <motion.p
-            className="text-4xl md:text-5xl lg:text-[64px] pb-[8px] font-extrabold"
+            className=" text-4xl md:text-5xl lg:text-[64px] pb-[8px] font-extrabold"
             variants={introChildren}
           >
-            BRAND NEW EVENT PACKAGES
+            Introducing Our Latest Winter Wonderland Event Experiences!
           </motion.p>
-          <motion.p
-            className="text-3xl md:text-4xl lg:text-[56px] pb-[32px] font-extrabold text-[#FFD600]"
-            variants={introChildren}
-          >
-            For Winter
-          </motion.p>
+          
           <motion.p
             className="text-[20px] text-[#DFDFDF] mx-auto max-w-[900px] pb=[32px]"
             variants={introChildren2}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga a vero
-            obcaecati aut totam delectus reprehenderit velit, consequuntur
-            nostrum aperiam quis non voluptatum voluptate nisi.
+            Welcome to Planorama - Where Events Come to Life! Your premier destination for seamless event management solutions. Let's craft unforgettable experiences together
           </motion.p>
           <motion.div variants={introChildren2}>
             <Button>Explore</Button>

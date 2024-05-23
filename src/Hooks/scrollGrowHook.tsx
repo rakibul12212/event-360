@@ -8,7 +8,7 @@ const useScrollGrowHook = () => {
     offset: ["0 1", "1.1 1"],
   });
   const scaleValues = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityValues = useTransform(scrollYProgress, [0, 1], [0.1, 1]);
+  const opacityValues = useTransform(scrollYProgress, [0, 1], [1.1, 1]);
   const style = {
     scale: scaleValues,
     opacity: opacityValues,
